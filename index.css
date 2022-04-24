@@ -185,9 +185,7 @@ background-position: center;
     height: auto;
   
 }
-.categories_item .top {
-    padding-bottom: 36px;
-}
+
 .slide_img{
     position: relative;
     
@@ -208,7 +206,7 @@ background-position: center;
     transition: all 0.5s;
 }
 
-.col-sm .slide-infor{
+.row .slide-infor{
     position: absolute;
     bottom: 0;
     padding: 0 0 10px 30px;
@@ -238,6 +236,7 @@ background-position: center;
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
     background-color: rgb(255, 255, 255);
     transition: all 0.5s;
+    border: 1px solid rgba(224, 224, 224, 0.795)
 }
 .box-wrap-container:hover {
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
@@ -294,3 +293,101 @@ color: white;
 }
 
 /* end features */
+/* reponsive  */
+/* mobile width < 740 px */
+@media only screen and (max-width: 46.1875em){
+.banner {
+    margin-top: 60px;
+    min-height: 450px;
+}
+.banner_infor{
+    max-width: 500px;
+    
+    margin-top: 30px;
+}
+.banner_infor h1{
+    font-size: 28px;
+    line-height: 38px;
+}
+.content1{
+    display: flex;
+    flex-wrap: wrap ;
+    padding: 50px 0 50px 0;
+}
+.content_left{
+    width: 100%;
+}
+.content_right {
+    padding-left: 0;
+    width: 100%;
+}
+.agent{
+    display: flex;
+    flex-wrap: wrap ;
+
+}
+.agent_img {
+    height: 200px;
+}
+.agent_right {
+    padding: 2rem !important;
+}
+.categories .container{
+    padding: 0;
+}
+.categories_title h3{
+    font-size: 16px;
+}
+.categories_title h1{
+    font-size: 26px;
+}
+.row .col-sm {
+    padding-bottom: 30px;
+
+}
+.categories_item .top{
+    display: flex;
+    flex-wrap: wrap ;
+}
+.slide_img img {
+    width: 180px ;
+    height: auto;
+}
+.slide_img::after{
+    width: 100%;
+}
+
+}
+/* tablet width >= 740 px and width < 1024 px */
+@media only screen and (min-width: 46.25em) and (max-width : 63.9375em ){
+    .content1{
+        display: flex;
+        flex-wrap: wrap ;
+        padding: 50px 0 50px 0;
+    }
+    .content_left{
+        width: 100%;
+    }
+    .content_right{
+        width: 100%;
+        padding-left: 0;
+
+    }
+    .agent{
+        display: flex;
+        flex-wrap: wrap ;
+    }
+    .agent_img{
+        max-height: 200px;
+    }
+    .agent_right{
+        padding: 60px !important;
+    }
+    .row1{
+        margin-top: 24px;
+    }
+    .slide_img::after{
+        width: 102%;
+    }
+   
+}
