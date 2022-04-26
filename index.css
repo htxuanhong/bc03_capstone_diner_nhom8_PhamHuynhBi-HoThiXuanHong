@@ -81,7 +81,8 @@ a:hover {
 }
 
 .form-inline .input-group .form-control {
-  padding: 1.375rem 0.75rem;
+  /* padding: 1.375rem 0.75rem; */
+  padding-right: 0;
 }
 
 .modal-header {
@@ -174,7 +175,7 @@ a:hover {
 }
 
 .form-inline .input-group .form-control {
-  border-right: none;
+  border: none;
 }
 
 .form-inline .input-group .form-control:focus {
@@ -355,7 +356,7 @@ a:hover {
 }
 
 .categories_item img {
-  width: 350px;
+  width: 100%;
   height: auto;
   border-radius: 6px;
 }
@@ -363,6 +364,10 @@ a:hover {
 .slide_img {
   position: relative;
 
+}
+
+.card-item {
+  margin-top: 20px;
 }
 
 .slide_img::after {
@@ -373,7 +378,8 @@ a:hover {
   content: " ";
   position: absolute;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
-
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .slide_img img:hover {
@@ -381,21 +387,28 @@ a:hover {
   transition: all 0.5s;
 }
 
-.row .slide-infor {
+.slide-infor {
   position: absolute;
-  bottom: 0;
-  padding: 0 0 10px 30px;
-
+    bottom: -15px;
+    left: 0;
+    right: 0;
 }
 
-.slide-infor a {
+.slide-infor a{
   color: white;
   text-decoration: none;
+}
 
+
+.slide-infor a h4{
+  font-weight: 800;
+  font-size: 22px;
 }
 
 .slide-infor h6 {
-  color: yellow;
+  color: #ffc600;
+  font-weight: 600;
+  font-size: 18px
 }
 
 
@@ -505,34 +518,41 @@ a:hover {
     line-height: 50px;
   }
 }
+
 @media (max-width:600px) {
-  .right_top_h6{
+  .right_top_h6 {
     font-size: 16px;
   }
-  .right_top h2{
+
+  .right_top h2 {
     font-size: 30px;
     line-height: 38px;
   }
-  .agent_right_content p{
+
+  .agent_right_content p {
     font-size: 16px;
     line-height: 26px;
   }
 }
+
 @media (max-width: 480px) {
   .banner {
     min-height: 450px;
   }
-  .banner_infor{
+
+  .banner_infor {
     max-width: 500px;
     margin-top: 30px;
   }
-  .banner_infor h3{
+
+  .banner_infor h3 {
     font-size: 28px;
     line-height: 38px;
   }
 }
+
 /* mobile width < 740 px */
- @media only screen and (max-width: 46.1875em) {
+@media only screen and (max-width: 46.1875em) {
   .banner {
     margin-top: 60px;
     min-height: 450px;
@@ -578,10 +598,6 @@ a:hover {
     padding: 2rem !important;
   }
 
-  .categories .container {
-    padding: 0;
-  }
-
   .categories_title h3 {
     font-size: 16px;
   }
@@ -598,11 +614,6 @@ a:hover {
   .categories_item .top {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .slide_img img {
-    width: 180px;
-    height: auto;
   }
 
   .slide_img::after {
@@ -635,7 +646,7 @@ a:hover {
   }
 
   .agent_img {
-    max-height: 200px;
+    min-height: 200px;
   }
 
   .agent_right {
