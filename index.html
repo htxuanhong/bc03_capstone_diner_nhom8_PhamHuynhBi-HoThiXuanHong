@@ -37,43 +37,87 @@
 
   <div class="banner">
     <div class="container">
-      <div class="banner_header">
-        <nav class="navbar navbar-light">
-          <a class="navbar-brand" href="#">Diner</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+      <div class="banner__header">
+        <div class="header__left">
+          <h1><a href="">Diner</a></h1>
 
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                Search here...
-              </button>
-            </form>
+        </div>
+
+        <div class="header__right">
+          <form class="form-inline">
+            <div class="input-group">
+              <input type="search" class="form-control" id="inlineFormInputGroup" placeholder="Search here..">
+
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- <div class="header_icon"> -->
+          <div class="light-dark">
+            <i class="fa fa-moon"></i>
           </div>
-        </nav>
+
+          <div class="banner-bars">
+            <button class="bars-btn1" data-toggle="modal" data-target="#exampleModalCenter">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-dialog modal-dialog-centered" role="document">
+
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                    <ul>
+
+                      <li><a href="">Home</a> </li>
+                      <li> <a href="">About</a>
+                      </li>
+                      <li> <a href="">Service</a>
+                      </li>
+                      <li> <a href="">Blog</a>
+                      </li>
+                      <li> <a href="">404</a>
+                      </li>
+                      <li> <a href="">Landing Page</a>
+                      </li>
+                      <li> <a href="">Contact</a>
+                      </li>
+                      <li> <a href="">Shot Codes</a>
+                      </li>
+                      <li> <a href="">Email</a>
+                      </li>
+                    </ul>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- </div> -->
+        </div>
+
       </div>
+
       <div class="banner_infor">
-        <h1>The Only Thing We Love More Than Food Is You!</h1>
-        <p>
+        <h3 >The Only Thing We Love More Than Food Is You!</h3>
+        <p class="py-4">
           Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
           vitae sit.Ea ipsum sed consequuntur illum facere.
         </p>
-        <button>
+        <button class="button-content btn  btn-white">
           Read More
           <i class="fa fa-angle-right"></i>
         </button>
@@ -81,12 +125,12 @@
     </div>
   </div>
 
-  
+
 
   <!-- header -->
   <!-- content -->
 
-  <div class="content">
+  <div class="content py-4">
     <div class="container">
       <div class="content1 py-md-5">
         <div class="content_left ">
@@ -115,35 +159,37 @@
   <!-- agent block -->
 
   <div class="agent_block">
-    <div class="agent_block_container">
-      <div class="agent">
+    <div class="container-fluid px-lg-0">
+      <div class=" row pb-0 ">
         <div class="agent_left col-lg-6 px-lg-0 pt-lg-0 pt-5">
           <div class="agent_img"></div>
         </div>
-        <div class="agent_right col-lg-6 px-lg-4 py-lg-3 py-4">
-          <div class="right_top">
-            <h6>More than 3000 Restaurants</h6>
-            <h1>Book a table easly at the best price</h1>
-            <p>
-              Vestibulum ante ipsum primis in faucibus orci luctus turpis
-              sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
-              tesque et libero ut justo ultrices in.
-            </p>
-          </div>
-          <div class="right_bottom">
-            <div class="right_bottom_right">
-              <div class="icon">
-                <i class="fa fa-thumbs-up"></i>
-              </div>
-              <a href="#"> Best Deals</a>
-              <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+        <div class="agent_right col-lg-6 px-lg-4 py-lg-3 py-4 ">
+          <div class="agent_right_content py-md-5 mx-5">
+            <div class="right_top">
+              <h6 class="right_top_h6">More than 3000 Restaurants</h6>
+              <h2>Book a table easly at the best price</h2>
+              <p class="my-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus turpis
+                sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
+                tesque et libero ut justo ultrices in.
+              </p>
             </div>
-            <div class="right_bottom_left">
-              <div class="icon">
-                <i class="fa fa-utensils"></i>
+            <div class="right_bottom mt-5">
+              <div class="right_bottom_right">
+                <div class="icon mb-4">
+                  <i class="fa fa-thumbs-up"></i>
+                </div>
+                <a href="#" > Best Deals</a>
+                <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
               </div>
-              <a href="#"> Best Food</a>
-              <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              <div class="right_bottom_left">
+                <div class="icon mb-4">
+                  <i class="fa fa-utensils"></i>
+                </div>
+                <a href="#"> Best Food</a>
+                <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -154,19 +200,21 @@
   <!-- agent block -->
   <!-- categories -->
 
-  <div class="categories">
-    <div class="container">
+  <div class="categories py-5">
+    <div class="container py-md-5 py-2">
       <div class="categories_title">
         <h6 class="title_h6">What's New</h6>
-        <h1>Popular Categories</h1>
+        <h3 class="mb-lg-5">Popular Categories</h3>
       </div>
       <div class="categories_item">
         <div class="res-categories-grids row">
           <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
             <div class="slide_img">
-              <img
+              <a href="">
+                <img
                 src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g1.jpg"
                 alt="" />
+              </a>
             </div>
             <div class="slide-infor">
               <a href="#">
@@ -177,9 +225,11 @@
           </div>
           <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
             <div class="slide_img">
-              <img
+              <a href="">
+                <img
                 src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g2.jpg"
                 alt="" />
+              </a>
             </div>
             <div class="slide-infor">
               <a href="#">
@@ -190,9 +240,11 @@
           </div>
           <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
             <div class="slide_img">
-              <img
+              <a href="">
+                <img
                 src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g3.jpg"
                 alt="" />
+              </a>
             </div>
             <div class="slide-infor">
               <a href="#">
@@ -203,9 +255,11 @@
           </div>
           <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
             <div class="slide_img">
+            <a href="">
               <img
-                src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g4.jpg"
-                alt="" />
+              src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g4.jpg"
+              alt="" />
+            </a>
             </div>
             <div class="slide-infor">
               <a href="#">
@@ -216,9 +270,11 @@
           </div>
           <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
             <div class="slide_img">
+             <a href="">
               <img
-                src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g5.jpg"
-                alt="" />
+              src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g5.jpg"
+              alt="" />
+             </a>
             </div>
             <div class="slide-infor">
               <a href="#">
@@ -229,9 +285,11 @@
           </div>
           <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
             <div class="slide_img">
-              <img
+              <a href="">
+                <img
                 src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/g6.jpg"
                 alt="" />
+              </a>
             </div>
             <div class="slide-infor">
               <a href="#">
@@ -446,7 +504,7 @@
   </section>
 
   <section class="blog py-5">
-    <div class="container">
+    <div class="container py-md-5 py-2">
       <div class="blog__title  ">
         <h6 class="title_h6">Latest Posts</h6>
         <h3 class="title_h3">Blog Posts</h3>
@@ -598,8 +656,8 @@
                   <q>OMG! I cannot believe. It's Awesome</q>
                 </blockquote>
                 <p>
-                  My new site is so much faster and easier to work with than my old site. They are <br> here to
-                  help the customers to get their success. Nemo sit eos, quod minus eius illo <br> labore.
+                  My new site is so much faster and easier to work with than my old site. They are here to
+                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                   Pellen tesque libero ut justo, ultrices in ligula.
                 </p>
                 <div class="text-bottom">
@@ -625,8 +683,8 @@
                   </q>
                 </blockquote>
                 <p>
-                  My new site is so much faster and easier to work with than my old site. They are <br> here to
-                  help the customers to get their success. Nemo sit eos, quod minus eius illo <br> labore.
+                  My new site is so much faster and easier to work with than my old site. They are here to
+                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                   Pellen tesque libero ut justo, ultrices in ligula.
                 </p>
                 <div class="text-bottom">
@@ -678,8 +736,8 @@
                   </q>
                 </blockquote>
                 <p>
-                  My new site is so much faster and easier to work with than my old site. They are <br> here to
-                  help the customers to get their success. Nemo sit eos, quod minus eius illo <br> labore.
+                  My new site is so much faster and easier to work with than my old site. They are here to
+                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                   Pellen tesque libero ut justo, ultrices in ligula.
                 </p>
                 <div class="text-bottom ">
