@@ -1,46 +1,125 @@
-/* dark theme */
-#myBody{
-    background-color: #232220;
-    
+/* light theme */
+#myBody {
+    background-color: white;
 }
 
-#switchButton .fa-sun{
-    display: block;
-}
-#switchButton .fa-moon{
+#switchButton .fa-sun {
     display: none;
 }
 
-/* :root{
-    --white: white
-    --black: black
-    
-    
-
-}
-[data-theme="dark"]{
-    --white: black
-    --black: 
-   white
-} */
-/* light theme */
-
-.dark#myBody{
-    background-color: white;
-   
-}
-
-
-.dark #switchButton .fa-sun{
-    display: none
-   
-}
-.dark #switchButton .fa-moon{
+#switchButton .fa-moon {
     display: block;
-    color: white
-    
-
 }
-.dark .box-wrap-container{
-    background-color: #000000;
+
+/* dark theme */
+
+.dark {
+    color: white;
+}
+
+.dark#myBody {
+    background-color: #232220;
+}
+
+.dark .form-control {
+    background-color: #232220;
+}
+
+.dark .input-group .input-group-prepend .input-group-text {
+    background-color: #232220;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.dark .input-group .input-group-prepend .input-group-text i {
+    color: #c2d0da
+}
+
+.dark .content_right {
+    color: inherit;
+}
+.dark .right_bottom a{
+    color: #eee;
+}
+.dark .number__content {
+    background-color: #232220;
+}
+
+.dark .number__content div {
+    color: #eee;
+}
+
+.dark .number__content p {
+    color: #c2d0da;
+}
+
+.dark .categories {
+    background-color: #282828;
+}
+
+
+
+.dark .blog {
+    background-color: #282828;
+}
+
+.dark .card-body a {
+    color: #eee;
+}
+
+.dark .card-body p {
+    color: #c2d0da;
+}
+
+.dark .blog__left a {
+    color: #eee;
+}
+
+.dark .blog__right a {
+    color: #eee;
+}
+
+.dark .testimonial-text blockquote q {
+    color: #eee;
+}
+
+.dark .testimonial-text p {
+    color: #c2d0da;
+   
+}
+/* .dark .swiper-pagination-bullet-active{
+    background-color: #ff6600 ;
+} */
+.dark .swiper-pagination-bullet {
+    background-color: #eee;
+    opacity: 1;
+}
+.dark .box-wrap-container {
+    background-color: #232220;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .infor span {
+    color: #c2d0da
+}
+
+.dark .infor a h4 {
+    color: #eee;
+}
+
+.dark .box-wrap-container p {
+    color: #c2d0da
+}
+.dark .footer__icon a i{
+    background-color: #232220;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
 }
