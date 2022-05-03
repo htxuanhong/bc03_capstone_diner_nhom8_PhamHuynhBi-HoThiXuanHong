@@ -9,6 +9,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+
 a:hover {
   cursor: pointer;
 }
@@ -229,6 +230,7 @@ a:hover {
 }
 
 .content_left h3 {
+ 
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
@@ -420,6 +422,8 @@ a:hover {
 
 .row {
   padding-bottom: 26px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .box-wrap-container {

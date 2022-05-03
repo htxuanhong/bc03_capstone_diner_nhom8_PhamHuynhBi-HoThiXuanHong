@@ -1,0 +1,46 @@
+/* dark theme */
+#myBody{
+    background-color: #232220;
+    
+}
+
+#switchButton .fa-sun{
+    display: block;
+}
+#switchButton .fa-moon{
+    display: none;
+}
+
+/* :root{
+    --white: white
+    --black: black
+    
+    
+
+}
+[data-theme="dark"]{
+    --white: black
+    --black: 
+   white
+} */
+/* light theme */
+
+.dark#myBody{
+    background-color: white;
+   
+}
+
+
+.dark #switchButton .fa-sun{
+    display: none
+   
+}
+.dark #switchButton .fa-moon{
+    display: block;
+    color: white
+    
+
+}
+.dark .box-wrap-container{
+    background-color: #000000;
+}
