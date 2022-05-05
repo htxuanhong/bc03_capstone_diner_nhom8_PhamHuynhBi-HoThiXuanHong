@@ -1201,11 +1201,11 @@ a:hover {
   transition: all 0.2s;
 }
 
-.end a {
+.end-top a {
   text-decoration: none;
 }
 
-.end a:hover {
+.end-top a:hover {
   color: #fff;
 }
 
@@ -1214,10 +1214,6 @@ a:hover {
   opacity: 1;
 }
 
-.end {
-  height: 450px;
-  color: #fff;
-}
 
 @keyframes ripple {
   0% {
