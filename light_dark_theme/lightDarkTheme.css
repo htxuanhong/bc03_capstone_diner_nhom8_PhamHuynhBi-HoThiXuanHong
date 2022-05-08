@@ -123,3 +123,6 @@
 .dark #switchButton .fa-moon {
     display: none;
 }
+.dark .input{
+    background-color: #282828;
+}
